@@ -1,14 +1,36 @@
-# Welcome to your CDK TypeScript project!
+# CDKでAPIサンプルを更新
 
-This is a blank project for TypeScript development with CDK.
+## AWSアーキテクチャー
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+API Gatewayを経由して、
 
-## Useful commands
+![アーキテクチャー](assets/cdk-api-sample.png)
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## 環境へデプロイ
+
+```bash
+# 依存ライブラリーをダウンロード
+npm install
+# Typescriptをビルド
+npm run build
+
+# AWSへデプロイ
+cdk deploy
+
+# 最後に、API GatewayのDomain
+```
+
+> CFnテンプレート確認
+
+```bash
+cdk synth
+```
+
+## 動作確認
+
+> API GatewayエンドポイントにCurlすると、「Hello」の挨拶が来る。
+
+```bash
+$ curl https://<api-id>.execute-api.ap-northeast-1.amazonaws.com/prod/
+Hello, CDK! You've hit /
+```

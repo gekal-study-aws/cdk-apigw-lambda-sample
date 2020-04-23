@@ -1,6 +1,11 @@
 {
   "name": "cdk-api-sample",
   "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/gekal-study-aws/cdk-api-sample.git",
+    "email": "liu.hongying@hotmail.com"
+  },
   "bin": {
     "cdk-api-sample": "bin/cdk-api-sample.js"
   },
@@ -11,19 +16,19 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.32.2",
+    "@aws-cdk/assert": "^1.34.1",
     "@types/jest": "^24.0.22",
     "@types/node": "10.17.5",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
-    "aws-cdk": "^1.32.2",
+    "aws-cdk": "^1.34.1",
     "ts-node": "^8.1.0",
     "typescript": "~3.7.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.32.2",
-    "@aws-cdk/aws-lambda": "^1.32.2",
-    "@aws-cdk/core": "^1.32.2",
+    "@aws-cdk/aws-apigateway": "^1.34.1",
+    "@aws-cdk/aws-lambda": "^1.34.1",
+    "@aws-cdk/core": "^1.34.1",
     "source-map-support": "^0.5.16"
   }
 }
