@@ -17,7 +17,7 @@ npm run build
 # AWSへデプロイ
 cdk deploy
 
-# 最後に、API GatewayのDomain
+# 最後に、API Gateway の URL が出力される。
 ```
 
 > CFnテンプレート確認
