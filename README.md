@@ -2,7 +2,12 @@
 
 ## AWSアーキテクチャー
 
-API Gatewayを経由して、
+API Gatewayを経由して、Lambdaを呼び出す。
+
+- API Gatewayはリクエストの受け口
+- Lambdaは計算処理を担当
+
+っていうシンプルなサーバーレスサンプルです。
 
 ![アーキテクチャー](assets/cdk-api-sample.png)
 
